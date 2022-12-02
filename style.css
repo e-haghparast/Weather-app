@@ -1,0 +1,121 @@
+body {
+  font-family: "Maven Pro", sans-serif !important;
+}
+
+input {
+  border: 2px solid #c427fb;
+  border-radius: 0 25px;
+  padding: 15px 20px;
+  color: #1f1d47;
+  background-color: #e0d9ff;
+  opacity: 0.8;
+}
+form {
+  display: inline;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  font-size: 15px;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 0 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 10px;
+  color: white;
+  background: radial-gradient(#f7cbfd 0%, #7758d1 100%);
+  box-shadow: -40px 60px 150px rgba(59, 38, 123, 0.7);
+}
+.search {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.current-button {
+  border: 2px solid #c427fb;
+  color: #1f1d47;
+  opacity: 0.8;
+  border-radius: 0 20px;
+  padding: 15px 20px;
+  font-weight: 700;
+  background-color: #e0d9ff;
+}
+
+.search-button {
+  border: 2px solid #c427fb;
+  color: #1f1d47;
+  opacity: 0.8;
+  border-radius: 0 20px;
+  padding: 15px 20px;
+  font-weight: 700;
+  background-color: #e0d9ff;
+}
+.box-item h1 {
+  font-size: 45px;
+  color: #48319d;
+  text-transform: capitalize;
+}
+.box-item h2 {
+  height: 46px;
+  padding-top: 16px;
+}
+.limitation {
+  color: #48319d;
+}
+
+.box-item h3 .number {
+  font-size: 80px;
+  margin-top: 10px;
+}
+.box-item .units a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hours-wrapper {
+  /* margin: 20px; */
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.col-2 {
+  height: 90px;
+  border-radius: 0 35px;
+  background-color: #48319d;
+  padding-top: 9px;
+}
+.day {
+  border: 2px solid #c427fb;
+  background-color: transparent;
+  border-radius: 0 15px;
+  width: 152px;
+  text-align: left;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom-width: 6px;
+}
+.day span {
+  display: inline-block;
+  width: 85px;
+  color: #482796;
+  font-weight: 700;
+}
+
+.cloud-sun,
+.cloud,
+.rain,
+.sun {
+  font-size: 30px;
+  color: #e0d9ff;
+  position: relative;
+  right: -29px;
+  text-align: center;
+  width: 38px;
+}
