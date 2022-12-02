@@ -119,3 +119,9 @@ li {
   text-align: center;
   width: 38px;
 }
+.autor {
+  text-align: center;
+}
+.autor a {
+  text-decoration: none;
+}
