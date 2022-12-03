@@ -1,5 +1,5 @@
 body {
-  font-family: "Maven Pro", sans-serif !important;
+  font-family: "Maven Pro", sans-serif;
 }
 
 input {
@@ -19,22 +19,27 @@ ul {
 }
 li {
   font-size: 15px;
+  text-transform: capitalize;
 }
-
-.container {
+small a {
+  text-decoration: none;
+}
+.weather-app-wrapper {
   max-width: 600px;
   text-align: center;
+  width: 50%;
+  margin: 50px auto;
+}
+.weather-app {
   border: 2px solid gray;
   border-radius: 0 170px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding: 50px 10px;
   color: white;
   background: radial-gradient(#f7cbfd 0%, #7758d1 100%);
   box-shadow: -40px 60px 150px rgba(59, 38, 123, 0.7);
 }
 .search {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 15px;
 }
 .current-button {
@@ -118,10 +123,4 @@ li {
   right: -29px;
   text-align: center;
   width: 38px;
-}
-.autor {
-  text-align: center;
-}
-.autor a {
-  text-decoration: none;
 }
