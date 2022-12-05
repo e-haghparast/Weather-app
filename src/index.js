@@ -34,8 +34,6 @@ form.addEventListener("submit", showCity);
 
 function updateData(response) {
   let currentCity = document.querySelector("#current-city");
-
-  console.log(response);
   let cityName = response.data.name;
   let humidity = response.data.main.humidity;
   let wind = Math.round(response.data.wind.speed);
@@ -43,8 +41,9 @@ function updateData(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureMax = Math.round(response.data.main.temp_max);
   let temperatureMin = Math.round(response.data.main.temp_min);
-  let humidityStatus = document.querySelector("#humidity-status");
+  let curentCity = document.querySelector("#Current-city");
   currentCity.innerHTML = cityName;
+  let humidityStatus = document.querySelector("#humidity-status");
   humidityStatus.innerHTML = `Humidity:${humidity}%`;
   let windStatus = document.querySelector("#wind-status");
   windStatus.innerHTML = `Wind:${wind}mph`;
