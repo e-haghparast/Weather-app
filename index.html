@@ -26,98 +26,99 @@
   </head>
   <body>
     <div class="container">
-        <div class="weather-app-wrapper">
+      <div class="weather-app-wrapper">
         <div class="weather-app">
-      <div class="search">
-        <form id="search-form">
-          <button type="submit" class="search-button">SEARCH</button>
-          <input
-            id="search-input"
-            type="text"
-            autofocus="on"
-            autocomplete="off"
-            placeholder="Enter a city "
-          />
-          <button class="current-button" id="current-button">Current</button>
-        </form>
+          <div class="search">
+            <form id="search-form">
+              <button type="submit" class="search-button">SEARCH</button>
+              <input
+                id="search-input"
+                type="text"
+                autofocus="on"
+                autocomplete="off"
+                placeholder="Enter a city "
+              />
+              <button class="current-button" id="current-button">
+                Current
+              </button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-4 box-item">
+              <ul>
+                <li><h1 id="current-city">City</h1></li>
+                <li id="humidity-status">Humidity</li>
+                <li id="wind-status">Wind</li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 box-item">
+              <ul>
+                <li>last updated: <span id="date"></span></li>
+                <li id="condition">Mostly Cloudy</li>
+                <li class="limitation">
+                  <span id="limitation-h">H</span>
+                  <span id="limitation-l">L</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 box-item">
+              <h3>
+                <span id="temp-number" class="number">14</span>
+                <!-- <span class="units">
+                <a href="#" id="celsios-link">&deg;C</a> |
+                <a href="#" id="fahrenheit-link">&deg;F</a>
+                </span> -->
+              </h3>
+            </div>
+          </div>
+          <div class="row hours-wrapper">
+            <div class="col-2">
+              <div>14<br />☁️<br />13&deg;</div>
+            </div>
+            <div class="col-2">
+              <div>15<br />☁️<br />12&deg;</div>
+            </div>
+            <div class="col-2">
+              <div>16<br />☁️<br />12&deg;</div>
+            </div>
+            <div class="col-2">
+              <div>17<br />☁️<br />11&deg;</div>
+            </div>
+            <div class="col-2">
+              <div>18<br />☁️<br />10&deg;</div>
+            </div>
+            <div class="col-2">
+              <div>19<br />☁️<br />9&deg;</div>
+            </div>
+          </div>
+          <div class="day">
+            <span>Wednesday</span>
+            <i class="fa-solid fa-cloud-sun cloud-sun"></i>
+          </div>
+          <hr />
+          <div class="day">
+            <span>Thursday</span> <i class="fa-solid fa-cloud cloud"></i>
+          </div>
+          <hr />
+          <div class="day">
+            <span>Friday</span> <i class="fa-solid fa-cloud cloud"></i>
+          </div>
+          <hr />
+          <div class="day">
+            <span>Saturday</span> <i class="fa-solid fa-cloud-rain rain"></i>
+          </div>
+          <hr />
+          <div class="day">
+            <span>Sunday</span> <i class="fa-solid fa-sun sun"></i>
+          </div>
+        </div>
+        <small>
+          <a href="https://github.com/e-haghparast/Weather-app" target="_blank"
+            >open-source code</a
+          >
+          by Elnaz Haghparast</small
+        >
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-4 box-item">
-          <ul>
-            <li><h1 id="current-city">City</h1></li>
-            <li id="humidity-status">Humidity</li>
-            <li id="wind-status">Wind</li>
-          </ul>
-        </div>
-        <div class="col-6 col-sm-4 box-item">
-          <ul>
-            <li><h2 id="current-day">Tuesday</h2></li>
-            <li id="clock">16:00</li>
-            <li id="condition">Mostly Cloudy</li>
-            <li class="limitation">
-              <span id="limitation-h">H</span>
-              <span id="limitation-l">L</span>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-sm-4 box-item">
-          <h3>
-            <span id="temp-number" class="number">14</span>
-            <!-- <span class="units">
-              <a href="#" id="celsios-link">&deg;C</a> |
-              <a href="#" id="fahrenheit-link">&deg;F</a>
-            </span> -->
-          </h3>
-        </div>
-      </div>
-      <div class="row hours-wrapper">
-        <div class="col-2">
-          <div>14<br />☁️<br />13&deg;</div>
-        </div>
-        <div class="col-2">
-          <div>15<br />☁️<br />12&deg;</div>
-        </div>
-        <div class="col-2">
-          <div>16<br />☁️<br />12&deg;</div>
-        </div>
-        <div class="col-2">
-          <div>17<br />☁️<br />11&deg;</div>
-        </div>
-        <div class="col-2">
-          <div>18<br />☁️<br />10&deg;</div>
-        </div>
-        <div class="col-2">
-          <div>19<br />☁️<br />9&deg;</div>
-        </div>
-      </div>
-      <div class="day">
-        <span>Wednesday</span> <i class="fa-solid fa-cloud-sun cloud-sun"></i>
-      </div>
-      <hr />
-      <div class="day">
-        <span>Thursday</span> <i class="fa-solid fa-cloud cloud"></i>
-      </div>
-      <hr />
-      <div class="day">
-        <span>Friday</span> <i class="fa-solid fa-cloud cloud"></i>
-      </div>
-      <hr />
-      <div class="day">
-        <span>Saturday</span> <i class="fa-solid fa-cloud-rain rain"></i>
-      </div>
-      <hr />
-      <div class="day">
-        <span>Sunday</span> <i class="fa-solid fa-sun sun"></i>
-      </div>
-    </div>
-    <small>  <a href="https://github.com/e-haghparast/Weather-app" target="_blank"
-        >open-source code</a
-      >
-      by Elnaz Haghparast</small>
-   
-    
-   
-    </div>
     </div>
     <script src="src/index.js"></script>
   </body>

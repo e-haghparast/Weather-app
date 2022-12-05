@@ -19,6 +19,8 @@ ul {
 }
 li {
   font-size: 15px;
+}
+li:firs-letter {
   text-transform: capitalize;
 }
 small a {
@@ -27,7 +29,6 @@ small a {
 .weather-app-wrapper {
   max-width: 600px;
   text-align: center;
-  width: 50%;
   margin: 50px auto;
 }
 .weather-app {
