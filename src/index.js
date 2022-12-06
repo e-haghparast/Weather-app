@@ -32,30 +32,25 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", showCity);
 
 function updateData(response) {
-  let currentCity = document.querySelector("#current-city");
   let cityName = response.data.name;
   let humidity = response.data.main.humidity;
   let wind = Math.round(response.data.wind.speed);
-  let description = response.data.weather[0].description;
+  let condition = response.data.weather[0].description;
   let temperature = Math.round(response.data.main.temp);
   let temperatureMax = Math.round(response.data.main.temp_max);
   let temperatureMin = Math.round(response.data.main.temp_min);
-  let curentCity = document.querySelector("#Current-city");
-  currentCity.innerHTML = cityName;
-  let humidityStatus = document.querySelector("#humidity-status");
-  humidityStatus.innerHTML = `Humidity:${humidity}%`;
-  let windStatus = document.querySelector("#wind-status");
-  windStatus.innerHTML = `Wind:${wind}mph`;
-  let date = document.querySelector("#date");
-  date.innerHTML = FormatDate(response.data.dt * 1000);
-  let condition = document.querySelector("#condition");
-  condition.innerHTML = `${description}`;
-  let limitationFirst = document.querySelector("#limitation-h");
-  limitationFirst.innerHTML = `H:${temperatureMax}°`;
-  let limitationSecond = document.querySelector("#limitation-l");
-  limitationSecond.innerHTML = `L:${temperatureMin}°`;
-  let tempNumber = document.querySelector("#temp-number");
-  tempNumber.innerHTML = `${temperature}°c`;
+  document.querySelector("#current-city").innerHTML = cityName;
+  document.querySelector(
+    "#humidity-status"
+  ).innerHTML = `Humidity:${humidity}%`;
+  document.querySelector("#wind-status").innerHTML = `Wind:${wind}mph`;
+  document.querySelector("#date").innerHTML = FormatDate(
+    response.data.dt * 1000
+  );
+  document.querySelector("#description").innerHTML = `${condition}`;
+  document.querySelector("#limitation-h").innerHTML = `H:${temperatureMax}°`;
+  document.querySelector("#limitation-l").innerHTML = `L:${temperatureMin}°`;
+  document.querySelector("#temp-number").innerHTML = `${temperature}°c`;
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
