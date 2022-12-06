@@ -19,11 +19,10 @@ function FormatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day}${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 function showCity(event) {
   event.preventDefault();
-  // currentCity.innerHTML = searchInput.value;
   let currentCity = document.querySelector("#current-city");
   let searchInput = document.querySelector("#search-input");
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apikey}&units=metric`;
@@ -57,6 +56,12 @@ function updateData(response) {
   limitationSecond.innerHTML = `L:${temperatureMin}°`;
   let tempNumber = document.querySelector("#temp-number");
   tempNumber.innerHTML = `${temperature}°c`;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function retrieveLocation(position) {

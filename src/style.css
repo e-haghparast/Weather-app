@@ -23,8 +23,12 @@ li {
 li:firs-letter {
   text-transform: capitalize;
 }
+li #icon {
+  width: 70px;
+}
 small a {
   text-decoration: none;
+  color: #c427fb;
 }
 .weather-app-wrapper {
   max-width: 600px;
