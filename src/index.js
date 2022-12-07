@@ -52,7 +52,7 @@ function updateData(response) {
   document.querySelector("#description").innerHTML = `${condition}`;
   document.querySelector("#limitation-h").innerHTML = `H:${temperatureMax}°`;
   document.querySelector("#limitation-l").innerHTML = `L:${temperatureMin}°`;
-  document.querySelector("#temperature").innerHTML = `${temperature}°c`;
+  document.querySelector("#temperature").innerHTML = `${temperature}`;
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
