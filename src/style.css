@@ -85,12 +85,19 @@ small a {
 }
 .box-item .units a {
   font-size: 14px;
-  color: #ffffff;
   text-decoration: none;
 }
-
+.box-item .units a:hover {
+  text-decoration: underline;
+}
+.box-item .units a.active {
+  color: #fff;
+  cursor: default;
+}
+.box-item .units .active:hover {
+  text-decoration: none;
+}
 .hours-wrapper {
-  /* margin: 20px; */
   text-align: center;
   padding: 40px 10px;
 }
