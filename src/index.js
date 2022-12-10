@@ -30,13 +30,12 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-    <div>
+    <div class="forecast-wrapper">
       <div class="forecast">
         <span class="forecast-day">${day}</span>
         <span class="forecast-temp"><span class="forecast-temp-max">18&deg;</span> <span class="forecast-temp-min">12&deg;</span></span>
         <img src="http://openweathermap.org/img/wn/13n@2x.png" alt="snow" class="icon"> 
       </div>
-      <hr />
     </div>
   `;
   });

@@ -90,6 +90,17 @@ small a {
 .box-item .units .active:hover {
   text-decoration: none;
 }
+.forecast-wrapper {
+  border-bottom: 1px solid #e0d9ff44;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.forecast-wrapper:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .forecast {
   border: 2px solid #c427fb;
   background-color: transparent;
