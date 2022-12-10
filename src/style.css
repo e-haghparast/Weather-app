@@ -73,6 +73,9 @@ small a {
   font-size: 80px;
   margin-top: 10px;
 }
+.box-item .units {
+  white-space: nowrap;
+}
 .box-item .units a {
   font-size: 14px;
   text-decoration: none;
@@ -87,7 +90,7 @@ small a {
 .box-item .units .active:hover {
   text-decoration: none;
 }
-.day {
+.forecast {
   border: 2px solid #c427fb;
   background-color: transparent;
   border-radius: 0 15px;
@@ -96,22 +99,25 @@ small a {
   padding: 10px;
   margin: 0 auto;
   border-bottom-width: 6px;
+  position: relative;
 }
-.day span {
+.forecast .forecast-day {
   display: inline-block;
   width: 85px;
   color: #482796;
   font-weight: 700;
 }
+.forecast .forecast-temp {
+  display: inline-block;
+  text-shadow: 2px 2px 0 #482796;
+}
 
-.cloud-sun,
-.cloud,
-.rain,
-.sun {
+.icon {
   font-size: 30px;
   color: #e0d9ff;
-  position: relative;
-  right: -29px;
+  position: absolute;
+  right: -20px;
+  top: 19px;
   text-align: center;
   width: 38px;
 }
