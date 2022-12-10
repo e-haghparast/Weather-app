@@ -38,7 +38,7 @@ small a {
 .weather-app {
   border: 2px solid gray;
   border-radius: 0 170px;
-  padding: 50px 10px;
+  padding: 40px 10px;
   color: white;
   background: radial-gradient(#f7cbfd 0%, #7758d1 100%);
   box-shadow: -40px 60px 150px rgba(59, 38, 123, 0.7);
@@ -47,16 +47,6 @@ small a {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-.current-button {
-  border: 2px solid #c427fb;
-  color: #1f1d47;
-  opacity: 0.8;
-  border-radius: 0 20px;
-  padding: 15px 20px;
-  font-weight: 700;
-  background-color: #e0d9ff;
-}
-
 .search-button {
   border: 2px solid #c427fb;
   color: #1f1d47;
@@ -96,17 +86,6 @@ small a {
 }
 .box-item .units .active:hover {
   text-decoration: none;
-}
-.hours-wrapper {
-  text-align: center;
-  padding: 40px 10px;
-}
-
-.col-2 {
-  height: 90px;
-  border-radius: 0 35px;
-  background-color: #48319d;
-  padding-top: 9px;
 }
 .day {
   border: 2px solid #c427fb;

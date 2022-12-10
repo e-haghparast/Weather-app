@@ -84,17 +84,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-function retrieveLocation(position) {
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`;
-  axios.get(url).then(updateData);
-}
-let currentButton = document.querySelector("#current-button");
-currentButton.addEventListener("click", getCurrentLocation);
-
-function getCurrentLocation() {
-  navigator.geolocation.getCurrentPosition(retrieveLocation);
-}
-getCurrentLocation();
+showCity(Tehran);
