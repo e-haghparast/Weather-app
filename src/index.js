@@ -24,9 +24,11 @@ function FormatDate(timestamp) {
 }
 function showCity(event) {
   event.preventDefault();
-  let currentCity = document.querySelector("#current-city");
   let searchInput = document.querySelector("#search-input");
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apikey}&units=metric`;
+  search(searchInput.value);
+}
+function search(city) {
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
   axios.get(url).then(updateData);
 }
 let form = document.querySelector("#search-form");
@@ -84,4 +86,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-showCity(Tehran);
+search("Tehran");
