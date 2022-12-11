@@ -1,6 +1,6 @@
 body {
-  /* font-family: "Maven Pro", sans-serif; */
-font-family: "Poiret One", cursive;
+  font-family: "Poiret One", cursive;
+  letter-spacing: 1px;
 }
 
 input {
@@ -74,23 +74,6 @@ small a {
   font-size: 80px;
   margin-top: 10px;
 }
-.box-item .units {
-  white-space: nowrap;
-}
-.box-item .units a {
-  font-size: 14px;
-  text-decoration: none;
-}
-.box-item .units a:hover {
-  text-decoration: underline;
-}
-.box-item .units a.active {
-  color: #fff;
-  cursor: default;
-}
-.box-item .units .active:hover {
-  text-decoration: none;
-}
 .forecast-wrapper {
   border-bottom: 1px solid #e0d9ff44;
   margin-bottom: 15px;
@@ -126,8 +109,8 @@ small a {
 
 .icon {
   position: absolute;
-  right: -20px;
-  top: 19px;
+  right: -35px;
+  top: 0;
   text-align: center;
-  width: 38px;
+  width: 70px;
 }
